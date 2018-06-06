@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\ArrayRefTests.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\ArrayViewTests.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\Base58.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\BlockReward.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\BlockingQueue.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\Chacha8.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\Checkpoints.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\DecomposeAmountIntoDigits.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\EventWaiter.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\ICoreStub.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\ICryptoNoteProtocolQueryStub.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\INodeStubs.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\MulDiv.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\ParseAmount.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\PaymentGateTests.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\Serialization.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\SerializationKV.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\Shuffle.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\StringBufferTests.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\StringViewTests.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestBcS.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestBlockchainExplorer.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestBlockchainGenerator.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestCurrency.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestFormatUtils.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestInprocessNode.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestJsonValue.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestMessageQueue.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestPath.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestPeerlist.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestProtocolPack.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestTransactionPoolDetach.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestTransfers.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestTransfersConsumer.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestTransfersContainer.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestTransfersContainerKeyImage.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestTransfersSubscription.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestWallet.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestWalletLegacy.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestWalletService.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TransactionApi.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TransactionApiHelpers.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TransactionPool.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\EventWaiter.h" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\ICoreStub.h" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\ICryptoNoteProtocolQueryStub.h" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\INodeStubs.h" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestBlockchainGenerator.h" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TransactionApiHelpers.h" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TransfersObserver.h" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\UnitTestsUtils.h" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9B6CA1B0-7305-3233-AE1F-283D0558DE22}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>tests</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Benjamin\Desktop\cryptonote\include;C:\Users\Benjamin\Desktop\cryptonote\src;C:\Users\Benjamin\Desktop\cryptonote\external;C:\Users\Benjamin\Desktop\cryptonote\src\version;C:\Users\Benjamin\Desktop\cryptonote\src\Platform\Windows;C:\Users\Benjamin\Desktop\cryptonote\src\platform\msc;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0;C:\Users\Benjamin\Desktop\cryptonote\external\gtest\include;C:\Users\Benjamin\Desktop\cryptonote\external\gtest;C:\Users\Benjamin\Desktop\cryptonote\tests\..\version;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Benjamin\Desktop\cryptonote\include;C:\Users\Benjamin\Desktop\cryptonote\src;C:\Users\Benjamin\Desktop\cryptonote\external;C:\Users\Benjamin\Desktop\cryptonote\src\version;C:\Users\Benjamin\Desktop\cryptonote\src\Platform\Windows;C:\Users\Benjamin\Desktop\cryptonote\src\platform\msc;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0;C:\Users\Benjamin\Desktop\cryptonote\external\gtest\include;C:\Users\Benjamin\Desktop\cryptonote\external\gtest;C:\Users\Benjamin\Desktop\cryptonote\tests\..\version;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Benjamin\Desktop\cryptonote\include;C:\Users\Benjamin\Desktop\cryptonote\src;C:\Users\Benjamin\Desktop\cryptonote\external;C:\Users\Benjamin\Desktop\cryptonote\src\version;C:\Users\Benjamin\Desktop\cryptonote\src\Platform\Windows;C:\Users\Benjamin\Desktop\cryptonote\src\platform\msc;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0;C:\Users\Benjamin\Desktop\cryptonote\external\gtest\include;C:\Users\Benjamin\Desktop\cryptonote\external\gtest;C:\Users\Benjamin\Desktop\cryptonote\tests\..\version;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Benjamin\Desktop\cryptonote\src\CMakeFiles\6d73a4606b8e90163d786fc81daa6910\tests.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Benjamin/Desktop/cryptonote/src/CMakeFiles/6d73a4606b8e90163d786fc81daa6910/tests.rule;C:\Users\Benjamin\Desktop\cryptonote\src\tests\Debug\core_tests.exe;C:\Users\Benjamin\Desktop\cryptonote\src\tests\Debug\integration_tests.exe;C:\Users\Benjamin\Desktop\cryptonote\src\tests\Debug\node_rpc_proxy_tests.exe;C:\Users\Benjamin\Desktop\cryptonote\src\tests\Debug\performance_tests.exe;C:\Users\Benjamin\Desktop\cryptonote\src\tests\Debug\system_tests.exe;C:\Users\Benjamin\Desktop\cryptonote\src\tests\Debug\transfers_tests.exe;C:\Users\Benjamin\Desktop\cryptonote\src\tests\Debug\unit_tests.exe;C:\Users\Benjamin\Desktop\cryptonote\src\tests\Debug\difficulty_tests.exe;C:\Users\Benjamin\Desktop\cryptonote\src\tests\Debug\hash_target_tests.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Benjamin\Desktop\cryptonote\src\tests\CMakeFiles\tests</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/Benjamin/Desktop/cryptonote/src/CMakeFiles/6d73a4606b8e90163d786fc81daa6910/tests.rule;C:\Users\Benjamin\Desktop\cryptonote\src\tests\RelWithDebInfo\core_tests.exe;C:\Users\Benjamin\Desktop\cryptonote\src\tests\RelWithDebInfo\integration_tests.exe;C:\Users\Benjamin\Desktop\cryptonote\src\tests\RelWithDebInfo\node_rpc_proxy_tests.exe;C:\Users\Benjamin\Desktop\cryptonote\src\tests\RelWithDebInfo\performance_tests.exe;C:\Users\Benjamin\Desktop\cryptonote\src\tests\RelWithDebInfo\system_tests.exe;C:\Users\Benjamin\Desktop\cryptonote\src\tests\RelWithDebInfo\transfers_tests.exe;C:\Users\Benjamin\Desktop\cryptonote\src\tests\RelWithDebInfo\unit_tests.exe;C:\Users\Benjamin\Desktop\cryptonote\src\tests\RelWithDebInfo\difficulty_tests.exe;C:\Users\Benjamin\Desktop\cryptonote\src\tests\RelWithDebInfo\hash_target_tests.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Benjamin\Desktop\cryptonote\src\tests\CMakeFiles\tests</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Benjamin/Desktop/cryptonote/src/CMakeFiles/6d73a4606b8e90163d786fc81daa6910/tests.rule;C:\Users\Benjamin\Desktop\cryptonote\src\tests\Release\core_tests.exe;C:\Users\Benjamin\Desktop\cryptonote\src\tests\Release\integration_tests.exe;C:\Users\Benjamin\Desktop\cryptonote\src\tests\Release\node_rpc_proxy_tests.exe;C:\Users\Benjamin\Desktop\cryptonote\src\tests\Release\performance_tests.exe;C:\Users\Benjamin\Desktop\cryptonote\src\tests\Release\system_tests.exe;C:\Users\Benjamin\Desktop\cryptonote\src\tests\Release\transfers_tests.exe;C:\Users\Benjamin\Desktop\cryptonote\src\tests\Release\unit_tests.exe;C:\Users\Benjamin\Desktop\cryptonote\src\tests\Release\difficulty_tests.exe;C:\Users\Benjamin\Desktop\cryptonote\src\tests\Release\hash_target_tests.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Benjamin\Desktop\cryptonote\src\tests\CMakeFiles\tests</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Benjamin\Desktop\cryptonote\src\tests\CMakeFiles\tests" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\tests\CoreTests.vcxproj">
+      <Project>{70B4E54B-BCB5-3245-8654-20131F761F30}</Project>
+      <Name>CoreTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\tests\DifficultyTests.vcxproj">
+      <Project>{9E9794AC-9C07-3C75-AF18-8178FA567DCD}</Project>
+      <Name>DifficultyTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\tests\HashTargetTests.vcxproj">
+      <Project>{32DA8FC6-A382-3A9E-B326-32F6876B6009}</Project>
+      <Name>HashTargetTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\tests\IntegrationTests.vcxproj">
+      <Project>{37B296ED-406B-3F9D-AD91-5D97EF0A464E}</Project>
+      <Name>IntegrationTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\tests\NodeRpcProxyTests.vcxproj">
+      <Project>{5F3D302F-D090-37B0-BDF6-9F5E9F733F18}</Project>
+      <Name>NodeRpcProxyTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\tests\PerformanceTests.vcxproj">
+      <Project>{B2795CB8-A41E-35A4-9D90-73D4EBFE8207}</Project>
+      <Name>PerformanceTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\tests\SystemTests.vcxproj">
+      <Project>{872858D4-8BFE-3BBA-B469-200D4857C2A1}</Project>
+      <Name>SystemTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\tests\TransfersTests.vcxproj">
+      <Project>{37CB6D1F-45C0-3B58-8A7D-1A3973746C58}</Project>
+      <Name>TransfersTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\tests\UnitTests.vcxproj">
+      <Project>{772AB239-1543-333A-B40F-C5CDE6972D1E}</Project>
+      <Name>UnitTests</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

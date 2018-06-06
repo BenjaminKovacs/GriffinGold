@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CA9D0908-690F-3CB9-B433-095A0493D425}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>CryptoNoteCore</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Benjamin\Desktop\cryptonote\src\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CryptoNoteCore.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CryptoNoteCore</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Benjamin\Desktop\cryptonote\src\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CryptoNoteCore.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CryptoNoteCore</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Benjamin\Desktop\cryptonote\src\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CryptoNoteCore.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CryptoNoteCore</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Benjamin\Desktop\cryptonote\include;C:\Users\Benjamin\Desktop\cryptonote\src;C:\Users\Benjamin\Desktop\cryptonote\external;C:\Users\Benjamin\Desktop\cryptonote\version;C:\Users\Benjamin\Desktop\cryptonote\src\Platform\Windows;C:\Users\Benjamin\Desktop\cryptonote\src\platform\msc;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4345</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;WIN32_LEAN_AND_MEAN;GTEST_HAS_TR1_TUPLE=0;_VARIADIC_MAX=8;__SSE4_1__;STATICLIB;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;WIN32_LEAN_AND_MEAN;GTEST_HAS_TR1_TUPLE=0;_VARIADIC_MAX=8;__SSE4_1__;STATICLIB;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Benjamin\Desktop\cryptonote\include;C:\Users\Benjamin\Desktop\cryptonote\src;C:\Users\Benjamin\Desktop\cryptonote\external;C:\Users\Benjamin\Desktop\cryptonote\version;C:\Users\Benjamin\Desktop\cryptonote\src\Platform\Windows;C:\Users\Benjamin\Desktop\cryptonote\src\platform\msc;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Benjamin\Desktop\cryptonote\include;C:\Users\Benjamin\Desktop\cryptonote\src;C:\Users\Benjamin\Desktop\cryptonote\external;C:\Users\Benjamin\Desktop\cryptonote\version;C:\Users\Benjamin\Desktop\cryptonote\src\Platform\Windows;C:\Users\Benjamin\Desktop\cryptonote\src\platform\msc;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Benjamin\Desktop\cryptonote\include;C:\Users\Benjamin\Desktop\cryptonote\src;C:\Users\Benjamin\Desktop\cryptonote\external;C:\Users\Benjamin\Desktop\cryptonote\version;C:\Users\Benjamin\Desktop\cryptonote\src\Platform\Windows;C:\Users\Benjamin\Desktop\cryptonote\src\platform\msc;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4345</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;WIN32_LEAN_AND_MEAN;GTEST_HAS_TR1_TUPLE=0;_VARIADIC_MAX=8;__SSE4_1__;STATICLIB;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;WIN32_LEAN_AND_MEAN;GTEST_HAS_TR1_TUPLE=0;_VARIADIC_MAX=8;__SSE4_1__;STATICLIB;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Benjamin\Desktop\cryptonote\include;C:\Users\Benjamin\Desktop\cryptonote\src;C:\Users\Benjamin\Desktop\cryptonote\external;C:\Users\Benjamin\Desktop\cryptonote\version;C:\Users\Benjamin\Desktop\cryptonote\src\Platform\Windows;C:\Users\Benjamin\Desktop\cryptonote\src\platform\msc;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Benjamin\Desktop\cryptonote\include;C:\Users\Benjamin\Desktop\cryptonote\src;C:\Users\Benjamin\Desktop\cryptonote\external;C:\Users\Benjamin\Desktop\cryptonote\version;C:\Users\Benjamin\Desktop\cryptonote\src\Platform\Windows;C:\Users\Benjamin\Desktop\cryptonote\src\platform\msc;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Benjamin\Desktop\cryptonote\include;C:\Users\Benjamin\Desktop\cryptonote\src;C:\Users\Benjamin\Desktop\cryptonote\external;C:\Users\Benjamin\Desktop\cryptonote\version;C:\Users\Benjamin\Desktop\cryptonote\src\Platform\Windows;C:\Users\Benjamin\Desktop\cryptonote\src\platform\msc;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4345</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;WIN32_LEAN_AND_MEAN;GTEST_HAS_TR1_TUPLE=0;_VARIADIC_MAX=8;__SSE4_1__;STATICLIB;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;WIN32_LEAN_AND_MEAN;GTEST_HAS_TR1_TUPLE=0;_VARIADIC_MAX=8;__SSE4_1__;STATICLIB;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Benjamin\Desktop\cryptonote\include;C:\Users\Benjamin\Desktop\cryptonote\src;C:\Users\Benjamin\Desktop\cryptonote\external;C:\Users\Benjamin\Desktop\cryptonote\version;C:\Users\Benjamin\Desktop\cryptonote\src\Platform\Windows;C:\Users\Benjamin\Desktop\cryptonote\src\platform\msc;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Benjamin\Desktop\cryptonote\include;C:\Users\Benjamin\Desktop\cryptonote\src;C:\Users\Benjamin\Desktop\cryptonote\external;C:\Users\Benjamin\Desktop\cryptonote\version;C:\Users\Benjamin\Desktop\cryptonote\src\Platform\Windows;C:\Users\Benjamin\Desktop\cryptonote\src\platform\msc;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\Account.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\Account.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\BlockIndex.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\BlockIndex.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\Blockchain.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\Blockchain.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\BlockchainIndices.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\BlockchainIndices.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\BlockchainMessages.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\BlockchainMessages.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\Checkpoints.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\Checkpoints.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\Core.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\Core.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\CoreConfig.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\CoreConfig.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\CryptoNoteBasic.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\CryptoNoteBasic.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\CryptoNoteBasicImpl.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\CryptoNoteBasicImpl.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\CryptoNoteFormatUtils.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\CryptoNoteFormatUtils.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\CryptoNoteSerialization.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\CryptoNoteSerialization.h" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\CryptoNoteStatInfo.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\CryptoNoteTools.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\CryptoNoteTools.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\Currency.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\Currency.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\Difficulty.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\Difficulty.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\IBlock.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\IBlock.h" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\IBlockchainStorageObserver.h" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\ICore.h" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\ICoreObserver.h" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\IMinerHandler.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\ITimeProvider.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\ITimeProvider.h" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\ITransactionValidator.h" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\ITxPoolObserver.h" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\IntrusiveLinkedList.h" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\MessageQueue.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\Miner.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\Miner.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\MinerConfig.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\MinerConfig.h" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\OnceInInterval.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\SwappedMap.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\SwappedMap.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\SwappedVector.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\SwappedVector.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\Transaction.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\TransactionApi.h" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\TransactionApiExtra.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\TransactionExtra.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\TransactionExtra.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\TransactionPool.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\TransactionPool.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\TransactionPrefixImpl.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\TransactionUtils.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\TransactionUtils.h" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore\VerificationContext.h" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteConfig.h" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

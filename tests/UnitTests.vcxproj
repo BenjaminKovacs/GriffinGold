@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A515CA4A-957A-3504-B2EF-ECEB968E1B01}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>UnitTests</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Benjamin\Desktop\cryptonote\tests\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UnitTests.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">unit_tests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Benjamin\Desktop\cryptonote\tests\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">UnitTests.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">unit_tests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Benjamin\Desktop\cryptonote\tests\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UnitTests.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">unit_tests</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Benjamin\Desktop\cryptonote\include;C:\Users\Benjamin\Desktop\cryptonote\src;C:\Users\Benjamin\Desktop\cryptonote\external;C:\Users\Benjamin\Desktop\cryptonote\version;C:\Users\Benjamin\Desktop\cryptonote\src\Platform\Windows;C:\Users\Benjamin\Desktop\cryptonote\src\platform\msc;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0;C:\Users\Benjamin\Desktop\cryptonote\external\gtest\include;C:\Users\Benjamin\Desktop\cryptonote\external\gtest;C:\Users\Benjamin\Desktop\cryptonote\tests\..\version;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4345</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;WIN32_LEAN_AND_MEAN;GTEST_HAS_TR1_TUPLE=0;_VARIADIC_MAX=8;__SSE4_1__;STATICLIB;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;WIN32_LEAN_AND_MEAN;GTEST_HAS_TR1_TUPLE=0;_VARIADIC_MAX=8;__SSE4_1__;STATICLIB;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Benjamin\Desktop\cryptonote\include;C:\Users\Benjamin\Desktop\cryptonote\src;C:\Users\Benjamin\Desktop\cryptonote\external;C:\Users\Benjamin\Desktop\cryptonote\version;C:\Users\Benjamin\Desktop\cryptonote\src\Platform\Windows;C:\Users\Benjamin\Desktop\cryptonote\src\platform\msc;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0;C:\Users\Benjamin\Desktop\cryptonote\external\gtest\include;C:\Users\Benjamin\Desktop\cryptonote\external\gtest;C:\Users\Benjamin\Desktop\cryptonote\tests\..\version;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Benjamin\Desktop\cryptonote\include;C:\Users\Benjamin\Desktop\cryptonote\src;C:\Users\Benjamin\Desktop\cryptonote\external;C:\Users\Benjamin\Desktop\cryptonote\version;C:\Users\Benjamin\Desktop\cryptonote\src\Platform\Windows;C:\Users\Benjamin\Desktop\cryptonote\src\platform\msc;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0;C:\Users\Benjamin\Desktop\cryptonote\external\gtest\include;C:\Users\Benjamin\Desktop\cryptonote\external\gtest;C:\Users\Benjamin\Desktop\cryptonote\tests\..\version;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\external\gtest\Debug\gtest_main.lib;..\src\Debug\PaymentGate.lib;..\src\Debug\Wallet.lib;Debug\TestGenerator.lib;..\src\Debug\InProcessNode.lib;..\src\Debug\NodeRpcProxy.lib;..\src\Debug\Rpc.lib;..\src\Debug\Http.lib;..\src\Debug\Transfers.lib;..\src\Debug\Serialization.lib;..\src\Debug\System.lib;..\src\Debug\Logging.lib;..\src\Debug\BlockchainExplorer.lib;..\src\Debug\Common.lib;..\src\Debug\CryptoNoteCore.lib;..\src\Debug\Crypto.lib;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0\stage\lib\libboost_system-vc141-mt-sgd-x32-1_66.lib;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0\stage\lib\libboost_filesystem-vc141-mt-sgd-x32-1_66.lib;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0\stage\lib\libboost_thread-vc141-mt-sgd-x32-1_66.lib;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0\stage\lib\libboost_date_time-vc141-mt-sgd-x32-1_66.lib;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0\stage\lib\libboost_chrono-vc141-mt-sgd-x32-1_66.lib;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0\stage\lib\libboost_regex-vc141-mt-sgd-x32-1_66.lib;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0\stage\lib\libboost_serialization-vc141-mt-sgd-x32-1_66.lib;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0\stage\lib\libboost_program_options-vc141-mt-sgd-x32-1_66.lib;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0\stage\lib\libboost_atomic-vc141-mt-sgd-x32-1_66.lib;..\external\gtest\Debug\gtest.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Benjamin/Desktop/cryptonote/tests/Debug/unit_tests.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Benjamin/Desktop/cryptonote/tests/Debug/unit_tests.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10485760</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Benjamin\Desktop\cryptonote\include;C:\Users\Benjamin\Desktop\cryptonote\src;C:\Users\Benjamin\Desktop\cryptonote\external;C:\Users\Benjamin\Desktop\cryptonote\version;C:\Users\Benjamin\Desktop\cryptonote\src\Platform\Windows;C:\Users\Benjamin\Desktop\cryptonote\src\platform\msc;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0;C:\Users\Benjamin\Desktop\cryptonote\external\gtest\include;C:\Users\Benjamin\Desktop\cryptonote\external\gtest;C:\Users\Benjamin\Desktop\cryptonote\tests\..\version;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4345</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;WIN32_LEAN_AND_MEAN;GTEST_HAS_TR1_TUPLE=0;_VARIADIC_MAX=8;__SSE4_1__;STATICLIB;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;WIN32_LEAN_AND_MEAN;GTEST_HAS_TR1_TUPLE=0;_VARIADIC_MAX=8;__SSE4_1__;STATICLIB;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Benjamin\Desktop\cryptonote\include;C:\Users\Benjamin\Desktop\cryptonote\src;C:\Users\Benjamin\Desktop\cryptonote\external;C:\Users\Benjamin\Desktop\cryptonote\version;C:\Users\Benjamin\Desktop\cryptonote\src\Platform\Windows;C:\Users\Benjamin\Desktop\cryptonote\src\platform\msc;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0;C:\Users\Benjamin\Desktop\cryptonote\external\gtest\include;C:\Users\Benjamin\Desktop\cryptonote\external\gtest;C:\Users\Benjamin\Desktop\cryptonote\tests\..\version;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Benjamin\Desktop\cryptonote\include;C:\Users\Benjamin\Desktop\cryptonote\src;C:\Users\Benjamin\Desktop\cryptonote\external;C:\Users\Benjamin\Desktop\cryptonote\version;C:\Users\Benjamin\Desktop\cryptonote\src\Platform\Windows;C:\Users\Benjamin\Desktop\cryptonote\src\platform\msc;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0;C:\Users\Benjamin\Desktop\cryptonote\external\gtest\include;C:\Users\Benjamin\Desktop\cryptonote\external\gtest;C:\Users\Benjamin\Desktop\cryptonote\tests\..\version;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\external\gtest\RelWithDebInfo\gtest_main.lib;..\src\RelWithDebInfo\PaymentGate.lib;..\src\RelWithDebInfo\Wallet.lib;RelWithDebInfo\TestGenerator.lib;..\src\RelWithDebInfo\InProcessNode.lib;..\src\RelWithDebInfo\NodeRpcProxy.lib;..\src\RelWithDebInfo\Rpc.lib;..\src\RelWithDebInfo\Http.lib;..\src\RelWithDebInfo\Transfers.lib;..\src\RelWithDebInfo\Serialization.lib;..\src\RelWithDebInfo\System.lib;..\src\RelWithDebInfo\Logging.lib;..\src\RelWithDebInfo\BlockchainExplorer.lib;..\src\RelWithDebInfo\Common.lib;..\src\RelWithDebInfo\CryptoNoteCore.lib;..\src\RelWithDebInfo\Crypto.lib;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0\stage\lib\libboost_system-vc141-mt-s-x32-1_66.lib;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0\stage\lib\libboost_filesystem-vc141-mt-s-x32-1_66.lib;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0\stage\lib\libboost_thread-vc141-mt-s-x32-1_66.lib;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0\stage\lib\libboost_date_time-vc141-mt-s-x32-1_66.lib;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0\stage\lib\libboost_chrono-vc141-mt-s-x32-1_66.lib;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0\stage\lib\libboost_regex-vc141-mt-s-x32-1_66.lib;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0\stage\lib\libboost_serialization-vc141-mt-s-x32-1_66.lib;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0\stage\lib\libboost_program_options-vc141-mt-s-x32-1_66.lib;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0\stage\lib\libboost_atomic-vc141-mt-s-x32-1_66.lib;..\external\gtest\RelWithDebInfo\gtest.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Benjamin/Desktop/cryptonote/tests/RelWithDebInfo/unit_tests.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Benjamin/Desktop/cryptonote/tests/RelWithDebInfo/unit_tests.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10485760</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Benjamin\Desktop\cryptonote\include;C:\Users\Benjamin\Desktop\cryptonote\src;C:\Users\Benjamin\Desktop\cryptonote\external;C:\Users\Benjamin\Desktop\cryptonote\version;C:\Users\Benjamin\Desktop\cryptonote\src\Platform\Windows;C:\Users\Benjamin\Desktop\cryptonote\src\platform\msc;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0;C:\Users\Benjamin\Desktop\cryptonote\external\gtest\include;C:\Users\Benjamin\Desktop\cryptonote\external\gtest;C:\Users\Benjamin\Desktop\cryptonote\tests\..\version;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4345</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;WIN32_LEAN_AND_MEAN;GTEST_HAS_TR1_TUPLE=0;_VARIADIC_MAX=8;__SSE4_1__;STATICLIB;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0600;WIN32_LEAN_AND_MEAN;GTEST_HAS_TR1_TUPLE=0;_VARIADIC_MAX=8;__SSE4_1__;STATICLIB;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Benjamin\Desktop\cryptonote\include;C:\Users\Benjamin\Desktop\cryptonote\src;C:\Users\Benjamin\Desktop\cryptonote\external;C:\Users\Benjamin\Desktop\cryptonote\version;C:\Users\Benjamin\Desktop\cryptonote\src\Platform\Windows;C:\Users\Benjamin\Desktop\cryptonote\src\platform\msc;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0;C:\Users\Benjamin\Desktop\cryptonote\external\gtest\include;C:\Users\Benjamin\Desktop\cryptonote\external\gtest;C:\Users\Benjamin\Desktop\cryptonote\tests\..\version;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Benjamin\Desktop\cryptonote\include;C:\Users\Benjamin\Desktop\cryptonote\src;C:\Users\Benjamin\Desktop\cryptonote\external;C:\Users\Benjamin\Desktop\cryptonote\version;C:\Users\Benjamin\Desktop\cryptonote\src\Platform\Windows;C:\Users\Benjamin\Desktop\cryptonote\src\platform\msc;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0;C:\Users\Benjamin\Desktop\cryptonote\external\gtest\include;C:\Users\Benjamin\Desktop\cryptonote\external\gtest;C:\Users\Benjamin\Desktop\cryptonote\tests\..\version;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\external\gtest\Release\gtest_main.lib;..\src\Release\PaymentGate.lib;..\src\Release\Wallet.lib;Release\TestGenerator.lib;..\src\Release\InProcessNode.lib;..\src\Release\NodeRpcProxy.lib;..\src\Release\Rpc.lib;..\src\Release\Http.lib;..\src\Release\Transfers.lib;..\src\Release\Serialization.lib;..\src\Release\System.lib;..\src\Release\Logging.lib;..\src\Release\BlockchainExplorer.lib;..\src\Release\Common.lib;..\src\Release\CryptoNoteCore.lib;..\src\Release\Crypto.lib;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0\stage\lib\libboost_system-vc141-mt-s-x32-1_66.lib;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0\stage\lib\libboost_filesystem-vc141-mt-s-x32-1_66.lib;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0\stage\lib\libboost_thread-vc141-mt-s-x32-1_66.lib;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0\stage\lib\libboost_date_time-vc141-mt-s-x32-1_66.lib;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0\stage\lib\libboost_chrono-vc141-mt-s-x32-1_66.lib;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0\stage\lib\libboost_regex-vc141-mt-s-x32-1_66.lib;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0\stage\lib\libboost_serialization-vc141-mt-s-x32-1_66.lib;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0\stage\lib\libboost_program_options-vc141-mt-s-x32-1_66.lib;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0\stage\lib\libboost_atomic-vc141-mt-s-x32-1_66.lib;..\external\gtest\Release\gtest.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Benjamin/Desktop/cryptonote/tests/Release/unit_tests.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Benjamin/Desktop/cryptonote/tests/Release/unit_tests.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10485760</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\ArrayRefTests.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\ArrayViewTests.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\Base58.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\BlockReward.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\BlockingQueue.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\Chacha8.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\Checkpoints.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\DecomposeAmountIntoDigits.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\EventWaiter.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\EventWaiter.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\ICoreStub.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\ICoreStub.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\ICryptoNoteProtocolQueryStub.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\ICryptoNoteProtocolQueryStub.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\INodeStubs.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\INodeStubs.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\MulDiv.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\ParseAmount.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\PaymentGateTests.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\Serialization.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\SerializationKV.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\Shuffle.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\StringBufferTests.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\StringViewTests.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestBcS.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestBlockchainExplorer.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestBlockchainGenerator.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestBlockchainGenerator.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestCurrency.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestFormatUtils.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestInprocessNode.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestJsonValue.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestMessageQueue.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestPath.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestPeerlist.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestProtocolPack.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestTransactionPoolDetach.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestTransfers.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestTransfersConsumer.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestTransfersContainer.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestTransfersContainerKeyImage.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestTransfersSubscription.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestWallet.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestWalletLegacy.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TestWalletService.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TransactionApi.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TransactionApiHelpers.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TransactionApiHelpers.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TransactionPool.cpp" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\TransfersObserver.h" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\UnitTestsUtils.h" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\tests\UnitTests\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\BlockchainExplorer.vcxproj">
+      <Project>{EB50CC41-D987-3E34-932E-2F9257143054}</Project>
+      <Name>BlockchainExplorer</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\Common.vcxproj">
+      <Project>{6C7FCA29-C1AC-3C6A-B228-85E11516C171}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\Crypto.vcxproj">
+      <Project>{453CF665-73B6-3508-98F8-AF802D4D9662}</Project>
+      <Name>Crypto</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\CryptoNoteCore.vcxproj">
+      <Project>{CA9D0908-690F-3CB9-B433-095A0493D425}</Project>
+      <Name>CryptoNoteCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\Http.vcxproj">
+      <Project>{BDF36797-AEB5-3EE5-AE1D-160A33B1A940}</Project>
+      <Name>Http</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\InProcessNode.vcxproj">
+      <Project>{BB50451A-4B5C-3B7A-8E24-323EC8B9C3A0}</Project>
+      <Name>InProcessNode</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\Logging.vcxproj">
+      <Project>{3BB53270-620C-342F-8E3E-CA69CC71D27E}</Project>
+      <Name>Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\NodeRpcProxy.vcxproj">
+      <Project>{CE9B711C-A6CF-39F9-A03E-412F6C7D9690}</Project>
+      <Name>NodeRpcProxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\PaymentGate.vcxproj">
+      <Project>{C40499AF-477F-3C6B-8DD6-E87E8F404B38}</Project>
+      <Name>PaymentGate</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\Rpc.vcxproj">
+      <Project>{0899EAE2-8622-3EDD-87DF-BC90119FA7AD}</Project>
+      <Name>Rpc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\Serialization.vcxproj">
+      <Project>{13CB257F-3F19-364B-9CA7-BE77B45B4368}</Project>
+      <Name>Serialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\System.vcxproj">
+      <Project>{8B41EC1F-9FF4-3B07-B349-99A79B3D53C3}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\tests\TestGenerator.vcxproj">
+      <Project>{EB0374F8-C2A6-31DA-A928-CF35FB310E37}</Project>
+      <Name>TestGenerator</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\Transfers.vcxproj">
+      <Project>{0DCA6458-76DB-3B01-BB9B-7E8DC6BEBB24}</Project>
+      <Name>Transfers</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\Wallet.vcxproj">
+      <Project>{87FC1A8E-FCF0-376B-BB00-CF005AD36BA0}</Project>
+      <Name>Wallet</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\external\gtest\gtest.vcxproj">
+      <Project>{B14CA5A9-182C-3B09-BE81-73FDC4A20273}</Project>
+      <Name>gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\external\gtest\gtest_main.vcxproj">
+      <Project>{DDDF00C9-1115-33F8-B174-839643CF5E6B}</Project>
+      <Name>gtest_main</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

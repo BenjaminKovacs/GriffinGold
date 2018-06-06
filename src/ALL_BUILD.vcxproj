@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{52D11FEC-CEDB-33FD-B334-F55C80E0891A}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Benjamin\Desktop\cryptonote\include;C:\Users\Benjamin\Desktop\cryptonote\src;C:\Users\Benjamin\Desktop\cryptonote\external;C:\Users\Benjamin\Desktop\cryptonote\src\version;C:\Users\Benjamin\Desktop\cryptonote\src\Platform\Windows;C:\Users\Benjamin\Desktop\cryptonote\src\platform\msc;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Benjamin\Desktop\cryptonote\include;C:\Users\Benjamin\Desktop\cryptonote\src;C:\Users\Benjamin\Desktop\cryptonote\external;C:\Users\Benjamin\Desktop\cryptonote\src\version;C:\Users\Benjamin\Desktop\cryptonote\src\Platform\Windows;C:\Users\Benjamin\Desktop\cryptonote\src\platform\msc;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Benjamin\Desktop\cryptonote\include;C:\Users\Benjamin\Desktop\cryptonote\src;C:\Users\Benjamin\Desktop\cryptonote\external;C:\Users\Benjamin\Desktop\cryptonote\src\version;C:\Users\Benjamin\Desktop\cryptonote\src\Platform\Windows;C:\Users\Benjamin\Desktop\cryptonote\src\platform\msc;C:\Users\Benjamin\Downloads\boost_1_66_0\boost_1_66_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\src\BlockchainExplorer.vcxproj">
+      <Project>{FA0D22A8-E2C3-3058-AB2A-94AF58F66BB4}</Project>
+      <Name>BlockchainExplorer</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\src\Common.vcxproj">
+      <Project>{61E82AE9-9892-3356-98CA-2E7E3BBEC6AE}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\src\ConnectivityTool.vcxproj">
+      <Project>{3494078B-0336-32D2-8359-6CD300537CFF}</Project>
+      <Name>ConnectivityTool</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\tests\CoreTests.vcxproj">
+      <Project>{70B4E54B-BCB5-3245-8654-20131F761F30}</Project>
+      <Name>CoreTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\src\Crypto.vcxproj">
+      <Project>{D553C8BB-12C8-3252-B07A-D110FD21DE10}</Project>
+      <Name>Crypto</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\src\CryptoNoteCore.vcxproj">
+      <Project>{397B820F-4B6E-3F54-80C3-CFBBB0C0F034}</Project>
+      <Name>CryptoNoteCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\tests\CryptoTests.vcxproj">
+      <Project>{EB335C70-3243-3AD3-A2A2-32C8A5C19982}</Project>
+      <Name>CryptoTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\src\Daemon.vcxproj">
+      <Project>{E195B4B1-E876-3D21-BB50-A9D50CA76146}</Project>
+      <Name>Daemon</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\tests\DifficultyTests.vcxproj">
+      <Project>{9E9794AC-9C07-3C75-AF18-8178FA567DCD}</Project>
+      <Name>DifficultyTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\tests\HashTargetTests.vcxproj">
+      <Project>{32DA8FC6-A382-3A9E-B326-32F6876B6009}</Project>
+      <Name>HashTargetTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\tests\HashTests.vcxproj">
+      <Project>{8041233B-ACF9-3681-9ECC-961B64B23303}</Project>
+      <Name>HashTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\src\Http.vcxproj">
+      <Project>{91A19307-7B53-3539-B922-37EEC316F5FC}</Project>
+      <Name>Http</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\src\InProcessNode.vcxproj">
+      <Project>{5972D2B5-35E2-320B-B5FD-C814EE7B18DC}</Project>
+      <Name>InProcessNode</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\tests\IntegrationTestLibrary.vcxproj">
+      <Project>{B82768A9-0433-3637-9C01-8260C3D1C2E0}</Project>
+      <Name>IntegrationTestLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\tests\IntegrationTests.vcxproj">
+      <Project>{37B296ED-406B-3F9D-AD91-5D97EF0A464E}</Project>
+      <Name>IntegrationTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\src\JsonRpcServer.vcxproj">
+      <Project>{C820E084-3556-3F5D-95FE-D6A844346877}</Project>
+      <Name>JsonRpcServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\src\Logging.vcxproj">
+      <Project>{0D1059C3-2A88-3866-93BB-0026A1FE10C1}</Project>
+      <Name>Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\src\Miner.vcxproj">
+      <Project>{E4214237-AD8A-32F7-B8D7-DEB96D8023BE}</Project>
+      <Name>Miner</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\src\NodeRpcProxy.vcxproj">
+      <Project>{E2DEEB9D-9868-3C3A-A7A4-7E8D4945A411}</Project>
+      <Name>NodeRpcProxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\tests\NodeRpcProxyTests.vcxproj">
+      <Project>{5F3D302F-D090-37B0-BDF6-9F5E9F733F18}</Project>
+      <Name>NodeRpcProxyTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\src\P2P.vcxproj">
+      <Project>{FF065298-CABA-3B95-B549-E28D65FC2909}</Project>
+      <Name>P2P</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\src\PaymentGate.vcxproj">
+      <Project>{C23667B9-19D8-3C6B-AB36-EDDE17C7D4A8}</Project>
+      <Name>PaymentGate</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\src\PaymentGateService.vcxproj">
+      <Project>{176E9D68-422A-3B9C-B66D-391668F58C71}</Project>
+      <Name>PaymentGateService</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\tests\PerformanceTests.vcxproj">
+      <Project>{B2795CB8-A41E-35A4-9D90-73D4EBFE8207}</Project>
+      <Name>PerformanceTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\src\Rpc.vcxproj">
+      <Project>{F12B0B2C-2666-362F-8983-9CA3FBC130DB}</Project>
+      <Name>Rpc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\src\Serialization.vcxproj">
+      <Project>{DF4FBAFB-70D9-3911-89BB-01E239B41C43}</Project>
+      <Name>Serialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\src\SimpleWallet.vcxproj">
+      <Project>{B1BB631E-9DAF-3E62-9848-51DA3F2ACC2C}</Project>
+      <Name>SimpleWallet</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\src\System.vcxproj">
+      <Project>{74436C12-A265-336D-BD1E-0C7EAC9D8854}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\tests\SystemTests.vcxproj">
+      <Project>{872858D4-8BFE-3BBA-B469-200D4857C2A1}</Project>
+      <Name>SystemTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\tests\TestGenerator.vcxproj">
+      <Project>{7512D176-71F3-3328-B06A-739346EB6CE6}</Project>
+      <Name>TestGenerator</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\src\Transfers.vcxproj">
+      <Project>{35D3C59B-64C2-3CDC-BC27-AA9E7B3F54D1}</Project>
+      <Name>Transfers</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\tests\TransfersTests.vcxproj">
+      <Project>{37CB6D1F-45C0-3B58-8A7D-1A3973746C58}</Project>
+      <Name>TransfersTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\tests\UnitTests.vcxproj">
+      <Project>{772AB239-1543-333A-B40F-C5CDE6972D1E}</Project>
+      <Name>UnitTests</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\src\Wallet.vcxproj">
+      <Project>{8553D20F-B012-3E4B-B650-920B3CFA9531}</Project>
+      <Name>Wallet</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\external\gtest\gtest.vcxproj">
+      <Project>{90294FBA-1F17-39E5-AF42-0DE0290BBA7A}</Project>
+      <Name>gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\external\gtest\gtest_main.vcxproj">
+      <Project>{A8939259-FE94-38D6-974C-8A9AFEADFE2C}</Project>
+      <Name>gtest_main</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\external\miniupnpc\upnpc-static.vcxproj">
+      <Project>{7658A603-97F9-34A3-B59F-8631BF80F2DC}</Project>
+      <Name>upnpc-static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Benjamin\Desktop\cryptonote\src\version.vcxproj">
+      <Project>{5968982D-9C76-379C-BBF6-65F48BE6D2EF}</Project>
+      <Name>version</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

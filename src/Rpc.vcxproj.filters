@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\Rpc\HttpClient.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\Rpc\HttpServer.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\Rpc\JsonRpc.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\Rpc\RpcServer.cpp" />
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\src\Rpc\RpcServerConfig.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\Rpc\CoreRpcServerCommandsDefinitions.h" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\Rpc\CoreRpcServerErrorCodes.h" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\Rpc\HttpClient.h" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\Rpc\HttpServer.h" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\Rpc\JsonRpc.h" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\Rpc\RpcServer.h" />
+    <ClInclude Include="C:\Users\Benjamin\Desktop\cryptonote\src\Rpc\RpcServerConfig.h" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

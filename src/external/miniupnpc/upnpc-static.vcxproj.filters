@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\external\miniupnpc\igd_desc_parse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\external\miniupnpc\miniupnpc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\external\miniupnpc\minixml.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\external\miniupnpc\minisoap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\external\miniupnpc\miniwget.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\external\miniupnpc\upnpc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\external\miniupnpc\upnpcommands.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\external\miniupnpc\upnpreplyparse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\external\miniupnpc\upnperrors.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\external\miniupnpc\connecthostport.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\external\miniupnpc\portlistingparse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Benjamin\Desktop\cryptonote\external\miniupnpc\receivedata.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C8C5992D-7A93-308A-B5FD-C2C0BE8AF8F0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
